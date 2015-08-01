@@ -1,4 +1,4 @@
-## First docker container
+## First docker image
 
 1. Create directory `web_server`.
 2. Create file named 'Dockerfile'.
@@ -13,7 +13,7 @@
    3. RUN -> These are the commands that you will run in the container while it's building.
       Example: RUN yum install httpd
 
-## Build container using docker build
+## Build image using docker build
 
 1. To build the container run the following command (while in chapter2 directory): docker build ./web_server
 
