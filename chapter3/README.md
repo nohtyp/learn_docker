@@ -10,9 +10,10 @@ $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
 nohtyp/web_server   v1                  4f9997a3321c        13 hours ago        451.7 MB
 ```
-
-###### Note: The '-i' is for interactive login to the container
-######       and '-t' is pseudo-terminal (which gives you back the terminal feedback).
+```
+Note: '-i' is for interactive login to the container
+      '-t' is pseudo-terminal (which gives you back the terminal feedback).
+```
 
 ##### Build container from image without the correct image tag
 ```
