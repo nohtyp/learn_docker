@@ -4,7 +4,7 @@
 2. Create file named 'Dockerfile'.
 3. Add the following instructions to the 'Dockerfile'.
 
-#### Note: All options must be capital.
+###### Note: All options must be capital.
    
    1. FROM -> This describes the particuhelar version of os you are going to use to       
       install your application. Example: FROM fedora:21 or docker pull fedora (this would pull down the latest image).
@@ -13,7 +13,7 @@
    3. RUN -> These are the commands that you will run in the container while it's building.
       Example: RUN yum install httpd
 
-## Build contai ner using docker build
+## Build container using docker build
 
 1. To build the container run the following command (while in chapter2 directory): docker build ./web_server
 
@@ -128,9 +128,9 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 <none>              <none>              4f9997a3321c        27 minutes ago      451.7 MB
 ```
 
-#### Note: This was how I tagged the image: docker build -t "nohtyp/web_server:v1" ./web_server
+###### Note: This was how I tagged the image: docker build -t "nohtyp/web_server:v1" ./web_server
 
-### With tag
+#### With tag
 ```
 docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
