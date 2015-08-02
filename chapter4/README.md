@@ -44,7 +44,7 @@ If you run the commands and there is something different, then you might want to
 you should be able to open a web browser on your host machine to 127.0.0.1:8080 and see the default apache web page.
 
 Also, because you started the container with the /usr/sbin/apachectl -D FOREGROUND command, if you restart the container it will restart
-with the containe r's httpd application running.
+with the container's httpd application running.
 
 To verify run the following:
 
