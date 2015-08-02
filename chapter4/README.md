@@ -48,16 +48,17 @@ with the containe r's httpd application running.
 
 To verify run the following:
 
-```
-Stop the container:
+#### Stop the container:
 
+```
 docker stop demo_web
 
 then try to open a web browser to the 127.0.0.1:8080 site and see if the page stops responding (you should not be able to view page anymore).
+```
 
+#### Start the container:
 
-Start the container:
-
+```
 docker start demo_web
 
 then try to open a web browser to the 127.0.0.1:8080 site and you should now be able to see the default httpd page.
