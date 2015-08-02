@@ -1,4 +1,4 @@
-## Ports and se Services
+## Ports and Services
 
 I wanted to use a RH distro (that used systemd) when building my container and found that starting
 services on a RH distro container is different als compared to the demo's which use debian based
