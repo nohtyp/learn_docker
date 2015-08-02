@@ -6,11 +6,10 @@ distros.  The problem that I ran into was that systemd services (systemctl comma
 do not start on the container without some extra work (I still haven't found a working solution..yet),
 but have found a workaround after testing startup of the application and came up with the following:
 
+##### Note: Use the Dockerfile in chapter 4 directory to build a new image that exposes port 80
+
+####  Content of the Dockerfile:
 ```
-use the Dockerfile in chapter 4 directory to build a new image that exposes port 80
-
-Content of the Dockerfile:
-
 FROM fedora:21
 MAINTAINER Thomas Foster "Thomas.Foster80@gmail.com"
 RUN yum install httpd -y
