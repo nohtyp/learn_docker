@@ -1,10 +1,10 @@
 ## Ports and Services
 
 I wanted to use a RH distro (that used systemd) when building my container and found that starting
-services on a RH distro container is different als compared to the demo's which use debian based
-distros.  The problem that I ran into was that systemd services do not start on the container without
-some extra work (I still haven't found a working solution..yet), but have found a workaround after
-testing startup of the application and came up with the following:
+services on a RH distro container is difficult as compared to the examples which used debian based
+distros.  The problem that I ran into was that systemd services (systemctl command reports an error)
+do not start on the container without some extra work (I still haven't found a working solution..yet),
+but have found a workaround after testing startup of the application and came up with the following:
 
 ```
 use the Dockerfile in chapter 4 directory to build a new image that exposes port 80
