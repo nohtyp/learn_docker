@@ -20,6 +20,9 @@ docker build -t 'nohtyp/httpd' ./web_server
 ```
 #### The command to run apache within a systemd RH container
 
+##### Note: -d -> Used to run in daemon mode (will not stop container after exit of process)
+#####       -p -> The port to use (in this example what interfaceto use..127.0.0.1 to bind port) 
+
 ```
 docker run -d -p 127.0.0.1:8080:80 --name "demo_web" nohtyp/httpd /usr/sbin/apachectl -D FOREGROUND
 ```
